@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          # PAT申请教程详见：https://www.jianshu.com/p/bb82b3ad1d11,需要repo和workflow权限
+          # PAT申请教程详见：https://www.jianshu.com/p/bb82b3ad1d11,需要repo和workflow权限 
           token: ${{ secrets.PAT }} 
       - name: random cron
         if: ${{ env.PAT != ''}}
